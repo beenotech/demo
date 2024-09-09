@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM&V CONSTRUCTORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header menu" id="headNav">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="Logo"> <!-- Cambia "images/logo.png" por la ruta de tu imagen -->
+        </a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="images/menu.png" class="menu-icono">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#gallery">Nosotros</a></li>
+                <li><a href="#about">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="section1">
+        <div class="section1-content container">
+            <div class="section1-txt">
+                <h1>CM&V ARQUITECTURA S.A. DE C.V. </h1>
+                <p>
+                    Somos una empresa constructora dedicada al diseño, construcción, mantenimiento y valuación de inmuebles.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="services container" id="services">
+        <h2>Nuestros <span>Servicios</span></h2>
+        <div class="services-content">
+
+            <div class="service">
+                <img src="/images/services1.jpg" alt="">
+                <div class="service-txt">
+                    <h3>Proyectos Ejecutivos</h3>
+                    <p>
+                        Elaboración de propuestas de diseño, planos arquitectónicos, instalaciones, readers, memorias, catálogos, presupuestos con la participación interdisciplinaria de profesionistas experimentados.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service">
+                <img src="images/services2.jpg" alt="">
+                <div class="service-txt">
+                    <h3>Ingenierías</h3>
+                    <p>
+                        Ingenierías básicas y de detalle para la obtención de documentos técnicos necesarios
+                        parala planificación y ejecución de las obras (obras estructurales, Instalaciones hidrosanitarias,
+                        eléctricas, voz y datos, HVAC, especiales).
+                    </p>
+                </div>
+            </div>
+
+            <div class="service">
+                <img src="images/services3.jpg" alt="">
+                <div class="service-txt">
+                    <h3>Avalúos</h3>
+                    <p>
+                        Servicios profesionales de valuación de inmuebles, bajo estándares nacionales con
+                        personal especializado (avalúos comerciales e hipotecarios).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="gallery container" id="gallery"> 
+        <h2>Conoce <span>Nuestro</span> Trabajo</h2>
+        <p>Nuestros años de experiencia nos permiten ejecutar obras de tipo industrial, comercial, hospitalario y residencial. Nuestras acciones toman en cuenta las necesidades y requerimientos particulares de nuestros clientes, así como, las normas y estándares de la industria.</p>
+
+        <div class="gallery-content">
+            <div class="item-a">
+                <img src="images/gallery1.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/gallery2.jpg" alt="">
+            </div>
+            <div class="item-b">
+                <img src="images/gallery3.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/gallery4.jpg" alt="">
+            </div>
+            <div class="item-c">
+                <img src="images/gallery5.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/gallery6.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/gallery8.jpg" alt="">
+            </div>
+            <div class="item-d">
+                <img src="images/gallery7.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="images/img1.jpg" alt="">
+            <img src="images/img2.jpg" alt="">
+        </div>
+        <div class="about-txt">
+            <br><br>
+            <h2>EN <span>CM&V</span></h2>
+            <p>
+                Nos dedicammos a ofrecer <span>servicios profesionales especializados</span> que facilitan la ejecución exitosa de los proyectos de nuestros clientes. 
+                Nuestro objetivo es convertirnos en <span>líderes en el sector de la construcción</span>, 
+                generando un <span>impacto social positivo</span> mediante la <span>calidad y eficiencia</span> en cada uno de nuestros servicios. 
+                Fundamentamos nuestro trabajo en los valores de <span>honestidad</span>, <span>responsabilidad</span>, y <span>compromiso</span>, asegurando así relaciones de confianza y proyectos bien ejecutados.
+            </p>
+            <a href="#" id="openModalLink" class="btn-1">Contáctanos</a>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contáctanos</h2>
+            <section class="form" id="form">
+                <form>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="subject">Asunto</label>
+                    <input type="text" name="subject" id="subject">
+
+                    <label for="coments">Mensaje</label>
+                    <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
+
+                    <input class="btn" type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <section class="map" id="map">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29499.84630133743!2d-99.52484102324327!3d17.5403473707158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cbeb86cfd307a7%3A0x7cccf9fcf7b8316!2sLa%20Avispa%20Museo%20Interactivo.!5e0!3m2!1ses!2smx!4v1713671220651!5m2!1ses!2smx"></iframe>
+        </div>
+    </section>
+
+
+
+    <footer class="footer container">
+        <div class="footer-txt">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo"> <!-- Cambia "images/logo.png" por la ruta de tu imagen -->
+            </a>
+            <p>
+                La Avispa Museo Interactivo.
+                Carretera Nacional, México 95 Km. 270, Fracc.villa Moderna, 39090 Chilpancingo de los Bravo, Gro.
+            </p>
+            <p>
+                (747) - 674 - 8374
+            </p>
+            <p>
+                lorem@Loremipsum.com
+            </p>
+        </div>
+
+        <div class="footer-socials">
+            <a href="#">
+                <img src="images/s1.png" alt="">
+            </a>
+            <a href="#">
+                <img src="images/s2.png" alt="">
+            </a>
+            <a href="#">
+                <img src="images/s3.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
